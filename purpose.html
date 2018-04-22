@@ -29,12 +29,12 @@
     font-size: 15px;
     background-color: #ff8080;
 }
-img: logo {
+#logo {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-img: po {
+#po {
     float: left
     width: 30%;
 }
@@ -43,8 +43,8 @@ img: po {
 <body>
 
 <div class="center">
-<p><img src="logo.png" alt="logo.png" style="width:screen.width/3;height:screen.height/7;margin-left:15px;"></p><br>
-<p><img src="po.png" alt="penguin.png" style="width:170px;height:170px;margin-left:15px;">
+<p><img src="logo.png" id="logo" alt="logo.png" style="width:screen.width/3;height:screen.height/7;margin-left:15px;"></p><br>
+<p><img src="po.png" id="po" alt="penguin.png" style="width:170px; height:170px; margin-left:15px;">
 	<p><input type="text" id="purposeBox" placeholder="Enter purpose">
     <input type="button" id="purposeEntered" value="GO" onclick="toFacebook()"></p>
     <p><input type="button" id="noPurpose" value="I have no purpose" onclick="toFacebook()"></p>
