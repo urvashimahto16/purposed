@@ -10,7 +10,7 @@ localStorage.setItem("ThePurpose", purposeInput); // save the item
 
 function toFacebook() {
    if (!boolVisited) {
-    window.location.assign("https://www.w3schools.com");
+    window.location.assign("https://www.facebook.com");
     boolVisited = true;
     document.getElementById("purpose").innerHTML = save();
     }
