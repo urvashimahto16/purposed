@@ -14,18 +14,26 @@
     width: 80%;
     padding: 10px;
 }
+#poLogo{
+	height: 250px;
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 15px;
+    background-color: pink;
+	display: flex;
+    justify-content: center;
+}
 #po {
-	margin-top: 20%;
-    float: left;
-    width: 30%;
+    height: 100%;
+    margin: 10px;
 }
 #logo {
-	width: 70%;
-	margin-top: 20%;
-    float: right;
+	height: 100%;
+    margin: 10px;
 }
 #purposeBox {
-    width: 60%;
+    width: 85%;
 	height: 50px;
     background-color: #99ffcc;
     border: none;
@@ -38,45 +46,54 @@
 	width: 10%;
 	height: 50px;
     font-size: 32px;
-    padding: 10px;
-    background-color: #99ffcc;
-    border: none;
+    background-color: white;
+    color: #7DD2B7;
+    border: double #7DD2B7 8px;
     font-family: Raleway, sans-serif;
+    line-height: 10px;
+
+}
+#purposeEntered:hover{
+	background-color: #F8F8F8;
 }
 #enterGo{
 	display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 6px;
     height: 80%;
     width: 80%;
+    background-color: #ffffff;
+    color: #99ffcc;
 }
 #noPurpose {
     width: 30%;
 	height: 25px;
     font-size: 15px;
-    background-color: #ff8080;
+    background-color: #936669;
+    color: #E8E8E8;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 </style>
+<script src="purpose.js"></script>
 </head>
 <body>
-
-<div id = "poLogo">
-<div id = "po">
-  	<p><img src="po.png" alt="po.png" style="width:170px; height:170px; margin-left:15px;">
-</div>
-<p><img src="logo.png" id="logo" alt="logo.png" style="width:screen.width/3;height:screen.height/7;"></p></div>
 <div class="center">
+	<div id = "poLogo">
+		<div id = "po">
+  			<img src="po.png" alt="po.png" style="height:100%; margin-left:15px;">
+		</div>
+    	<div id ="logo">
+			<img src="logo.png" alt="logo.png" style="height:100%;">
+    	</div></div>
 	<div class="input">
     <div id = "enterGo">
       <input type="text" id="purposeBox" placeholder="Enter purpose">
-      <input type="button" id="purposeEntered" value=">" onclick="toFacebook()"></p>
-      </div>
-      <p><input type="button" id="noPurpose" value="I have no purpose" onclick="toFacebook()"></p>
-      <script src="purpose.js"></script>
-    </div></p>
+      <input type="button" id="purposeEntered" value="&#10132;" onclick="toFacebook()"></div>
+      
+      <input type="button" id="noPurpose" value="I have no purpose" onclick="toFacebook()"></div>
 </div>
 </body>
 </html>
